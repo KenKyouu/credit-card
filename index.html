@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="form">
+      <input
+        type="text"
+        id="cardNumber"
+        placeholder="0000 0000 0000 0000"
+        onkeyup="value=value.replace(/[^\d]/g,'') "
+        maxlength="16"
+      />
+      <span class="numberSpan">Card number</span>
+      <input type="text" id="dueDate" placeholder="MM/YY" />
+      <span class="dateSpan">Expiry date</span>
+      <input
+        type="text"
+        id="cardCvc"
+        placeholder="CVC"
+        onkeyup="value=value.replace(/[^\d]/g,'') "
+        maxlength="3"
+      />
+      <span class="cvcSpan">CVC/CVV</span>
+      <input
+        type="text"
+        id="yourName"
+        placeholder="Enter placeholder's full name"
+      />
+      <span class="nameSpan">Cardholder name</span>
+    </div>
+    <div class="circles">
+      <div class="circle circle-1"></div>
+      <div class="circle circle-2"></div>
+    </div>
+
+    <div class="card-group">
+      <div class="card">
+        <!-- <div class="logo"><img src="https://raw.githubusercontent.com/dasShounak/freeUseImages/main/Visa-Logo-PNG-Image.png" alt="Visa" id="logo"></div> -->
+        <div class="logo"><img src="" id="logo" /></div>
+        <div class="chip">
+          <img
+            src="https://raw.githubusercontent.com/dasShounak/freeUseImages/main/chip.png"
+            alt="chip"
+          />
+        </div>
+        <div class="numberShow" id="numberShow">0000 0000 0000 0000</div>
+        <div class="nameShow" id="nameShow">Placeholder</div>
+        <div class="dateShow" id="dateShow">MM/YY</div>
+        <div class="cvcShow" id="cvcShow">CVC</div>
+        <div class="ring"></div>
+      </div>
+    </div>
+  </body>
+  <script src="./javascript.js"></script>
+</html>
